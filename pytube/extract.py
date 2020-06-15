@@ -7,8 +7,10 @@ from collections import OrderedDict
 from html.parser import HTMLParser
 from typing import Any, Optional, Tuple, List, Dict
 from urllib.parse import quote, parse_qs, unquote, parse_qsl
-from urllib.parse import urlencode
-
+try:
+    from urllib.parse import urlencode
+except:
+    from urllib import urlencode
 from pytube.cipher import Cipher
 from pytube.exceptions import RegexMatchError, HTMLParseError, LiveStreamError
 from pytube.helpers import regex_search
