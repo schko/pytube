@@ -49,7 +49,6 @@ setup(
     long_description_content_type="text/markdown",
     long_description=long_description,
     zip_safe=True,
-    python_requires=">=3.6",
     project_urls={
         "Bug Reports": "https://github.com/hbmartin/pytube3/issues",
         "Read the Docs": "https://pytube3.readthedocs.io/en/latest/?badge=latest",
