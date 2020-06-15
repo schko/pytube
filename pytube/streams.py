@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 class Stream:
     """Container for stream manifest data."""
 
-    def __init__(self, stream: Dict, player_config_args: Dict, monostate: Monostate):
+    def __init__(self, stream, player_config_args, monostate):
         """Construct a :class:`Stream <Stream>`.
 
         :param dict stream:
